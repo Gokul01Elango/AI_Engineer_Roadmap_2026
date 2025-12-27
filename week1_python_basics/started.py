@@ -1,1 +1,0 @@
-print("I started my journey to become an AI Engineer!")
