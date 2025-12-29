@@ -10,13 +10,14 @@
 
 a=int(input("enter your number"))
 count=0
-# a=1234
-# print(a//10)
-# -12232
-print(-12334/10)
-while a>0:
-    count=count+1
-    a=a//10
-    # print(a)
-    
+a=abs(a)
+if a == 0:
+    print(1)
+else :
+    while a>0:
+        count=count+1
+        a=a//10
+       
+
+        
 print(count)
