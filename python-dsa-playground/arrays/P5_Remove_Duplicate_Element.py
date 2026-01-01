@@ -79,13 +79,24 @@ def remove_duplicate_after_Sorting(arr):
         else:
             values.append(arr[i])
     print(values)
-def remove_duplicate(arr):
+def remove_duplicate_two_pointer(arr):
     left =0
     right=1
+    n=len(arr)
+    for i in range(n-1):
+        if arr[left]!=arr[right]:
+            left+=1
+            arr[left]=arr[right]
+            print("helo")
+        right+=1
     
+    print(arr )
+    print(i)
+
 
 # arr=[-2, 2, 4, 4, 4, 4, 5, 5]
 arr=[0, 0, 3, 3, 5, 6]
-remove_duplicate(arr)
+remove_duplicate_two_pointer(arr)
+# remove_duplicate(arr)
 # remove_duplacate_after_Sorting(arr)
 # remove_duplicate_complex_method(arr)
