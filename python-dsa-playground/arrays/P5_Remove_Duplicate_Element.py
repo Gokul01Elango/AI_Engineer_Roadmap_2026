@@ -68,7 +68,7 @@ def remove_duplicate_w_list(arr):
     print(values)
     print(arr)
 
-def remove_duplacate_after_Sorting(arr):
+def remove_duplicate_after_Sorting(arr):
     
     arr.sort()
     values=[arr[0]]
@@ -79,9 +79,13 @@ def remove_duplacate_after_Sorting(arr):
         else:
             values.append(arr[i])
     print(values)
+def remove_duplicate(arr):
+    left =0
+    right=1
+    
 
 # arr=[-2, 2, 4, 4, 4, 4, 5, 5]
 arr=[0, 0, 3, 3, 5, 6]
-# remove_duplicate(arr)
-remove_duplacate_after_Sorting(arr)
-remove_duplicate_complex_method(arr)
+remove_duplicate(arr)
+# remove_duplacate_after_Sorting(arr)
+# remove_duplicate_complex_method(arr)
